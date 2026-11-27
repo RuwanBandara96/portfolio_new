@@ -13,24 +13,20 @@ export default function Home() {
       <Navbar />
 
       {/* Content */}
-      <div className="pt-10 space-y-10">
+      <div className="pt-10 space-y-1">
         <Hero />
-
         <section className="px-4">
           <About />
         </section>
-
         <section className="px-4">
           <Experience />
         </section>
-
         <section className="px-4">
           <Projects />
         </section>
-        <section className="px-4 pb-20">
+        <section className="px-4 pb-1">
           <Contact />
         </section>
-
       </div>
 
     </main>

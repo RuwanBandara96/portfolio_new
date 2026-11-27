@@ -6,14 +6,17 @@ import StatsCards from './StatsCards'
 
 const techStack = [
   'Next.js',
+  'React',
+  'React Native',
   'TypeScript',
   'Node.js',
-  'Java',
+  'TypeORM',
   'MySQL',
   'MongoDB',
+  'MCP',
   'Docker',
   'AWS',
-  'Redis',
+  'Java',
 ]
 
 export default function Hero() {
@@ -36,7 +39,7 @@ export default function Hero() {
           </motion.h1>
 
           <p className="mt-4 text-gray-300 text-lg">
-            Full Stack Engineer • Building scalable systems
+            Software Team Lead • Full Stack Engineer • Building scalable systems
           </p>
 
           <p className="mt-3 text-gray-400 text-sm max-w-xl">

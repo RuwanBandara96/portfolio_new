@@ -4,28 +4,28 @@ import { motion } from 'framer-motion'
 
 const highlights = [
   {
-    title: 'Microservices Architecture',
-    desc: 'Designing scalable, modular backend systems',
+    title: 'Team Leadership & Delivery',
+    desc: 'Leading cross-functional Agile squads, code reviews, and release quality',
   },
   {
-    title: 'Enterprise Systems',
-    desc: 'ERP, Loan, Inventory & Auction platforms',
+    title: 'Fintech & ERP Systems',
+    desc: 'Pawning, Loan Management, Inventory Batch Pricing & Core ERP modules',
   },
   {
-    title: 'Full Stack Development',
-    desc: 'Next.js + Node.js end-to-end solutions',
+    title: 'Full-Stack & Mobile',
+    desc: 'Next.js, React, React Native, Node.js, TypeScript & TypeORM',
   },
   {
-    title: 'REST APIs',
-    desc: 'Secure, performant API development',
+    title: 'AI & MCP Integration',
+    desc: 'Model Context Protocol servers for real-time data & interest queries',
   },
   {
-    title: 'Cloud & AWS',
-    desc: 'Deploying scalable cloud-based systems',
+    title: 'Database & Query Tuning',
+    desc: 'MySQL & MongoDB optimization, transactions, RBAC & audit integrity',
   },
   {
-    title: 'System Design',
-    desc: 'Clean architecture & maintainable code',
+    title: 'System Architecture',
+    desc: 'Scalable APIs, clean domain modeling & maintainable codebases',
   },
 ]
 
@@ -37,6 +37,7 @@ export default function About() {
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="text-3xl font-bold text-center mb-8"
       >
         About Me
@@ -46,17 +47,15 @@ export default function About() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="text-center max-w-3xl mx-auto"
       >
         <p className="text-gray-300 leading-7">
-          I’m a <span className="text-blue-400 font-semibold">Full Stack Engineer </span> 
-          passionate about building scalable, high-performance applications using modern technologies.
+          I’m a <span className="text-blue-400 font-semibold">Software Team Lead &amp; Full-Stack Engineer</span> with 4+ years of experience building scalable, high-performance applications across web, mobile, and backend systems.
         </p>
 
         <p className="text-gray-400 mt-4 text-sm leading-6">
-          I specialize in microservices architecture and enterprise systems including ERP,
-          Loan Management, Inventory, and Auction platforms. I enjoy solving complex
-          real-world problems and transforming them into clean, efficient, and maintainable solutions.
+          I specialize in enterprise financial and operational platforms—including Pawning &amp; Re-Pawning, Loan &amp; Fund Management, Inventory Batch Pricing, and ERP Core Modules—alongside AI Model Context Protocol (MCP) integrations. I enjoy leading teams, solving complex business problems, and turning intricate requirements into clean, reliable software.
         </p>
       </motion.div>
 
@@ -68,6 +67,7 @@ export default function About() {
             key={i}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
             transition={{ delay: i * 0.1 }}
             className="glass p-5 rounded-xl hover:scale-105 transition hover:shadow-xl hover:shadow-blue-500/10"
           >

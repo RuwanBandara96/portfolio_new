@@ -4,47 +4,59 @@ import { motion } from 'framer-motion'
 
 const experiences = [
   {
-  role: 'Software Engineer',
-  company: 'Evoke Labs',
-  period: '2024 - Present',
-  highlights: [
-    'Developed a full Auction Management System with approval workflows',
-    'Built Inventory Management Module for stock tracking and operations',
-    'Designed scalable backend APIs for enterprise-level applications',
-    'Implemented role-based workflows and data validation logic',
-  ],
-  tech: ['Next.js', 'Node.js', 'MySQL', 'AWS', 'AWS Lambda', 'Redis'],
-},
+    role: 'Software Team Lead',
+    company: 'Evoke Labs',
+    period: 'Apr 2026 - Present',
+    highlights: [
+      'Lead a cross-functional Agile squad across Pawning & Re-Pawning, Loan Management, Inventory, and ERP Core Modules',
+      'Architected AI Model Context Protocol (MCP) server integration for natural-language loan, arrears, and interest lookups',
+      'Enforce coding standards, conduct PR and architecture reviews, and oversee local/Postman validation gates',
+      'Translate business requirements into technical specs, estimation schedules, and release plans',
+    ],
+    tech: ['TypeScript', 'Next.js', 'React', 'Node.js', 'TypeORM', 'MySQL', 'MCP'],
+  },
+  {
+    role: 'Software Engineer',
+    company: 'Evoke Labs',
+    period: 'Oct 2024 - Apr 2026',
+    highlights: [
+      'Built Pawning Renewals, Loan Skips, Post-Dated Cheque (PDC) tracking, and Backdated Transaction workflows',
+      'Engineered Inventory Batch-to-Price mapping and stock valuation features with strict audit integrity',
+      'Developed full-stack web and mobile features across Next.js, React Native, and Node.js',
+      'Optimized MySQL and MongoDB queries and implemented RBAC and authentication protocols',
+    ],
+    tech: ['Next.js', 'React Native', 'TypeScript', 'Node.js', 'TypeORM', 'MySQL', 'MongoDB'],
+  },
   {
     role: 'Associate Software Engineer',
     company: 'Evoke Labs',
-    period: '2023 - 2024',
+    period: 'Oct 2023 - Oct 2024',
     highlights: [
-      'Built loan management system features',
-      'Handled REST API development',
-      'Improved system performance',
+      'Developed modular backend services and responsive frontend interfaces for lending and ERP platforms',
+      'Integrated RESTful APIs and third-party utilities while resolving production issues promptly',
+      'Maintained technical specifications and system architecture documentation',
     ],
-    tech: ['Next.js','Java','Node.js', 'MySQL', 'AWS'],
+    tech: ['Next.js', 'Node.js', 'Express', 'MySQL', 'MongoDB'],
   },
   {
     role: 'Associate Software Engineer',
     company: 'VISO Labs',
-    period: '2023',
+    period: 'Jun 2023 - Sep 2023',
     highlights: [
-      'Worked on full-stack applications',
-      'Integrated frontend with backend services',
+      'Built and tested modular full-stack features across mobile and web applications',
+      'Collaborated on unit testing, debugging, and version control workflows',
     ],
-    tech: ['React Native','Node.js', 'Express', 'MongoDB'],
+    tech: ['React Native', 'Node.js', 'Express', 'MongoDB'],
   },
   {
     role: 'Software Engineer Intern',
     company: 'SLT Digital Lab',
-    period: '2022 - 2023',
+    period: 'Nov 2022 - May 2023',
     highlights: [
-      'Developed IoT-based platform',
-      'Assisted in backend development',
+      'Developed an IoT-based platform using Next.js and Node.js',
+      'Researched emerging technologies and assisted with internal R&D tools',
     ],
-    tech: ['Node.js', 'IoT', 'Next.js', 'MongoDB', 'Firebase'],
+    tech: ['Next.js', 'Node.js', 'IoT', 'MongoDB'],
   },
 ]
 
@@ -68,12 +80,13 @@ export default function Experience() {
               key={i}
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ delay: i * 0.1 }}
               className="relative flex items-start gap-6"
             >
 
               {/* Timeline Dot */}
-              <div className="w-3 h-3 mt-3 bg-blue-400 rounded-full shadow-lg"></div>
+              <div className="w-3 h-3 mt-3 bg-blue-400 rounded-full shadow-lg shrink-0"></div>
 
               {/* Card */}
               <div className="glass p-6 rounded-xl w-full hover:scale-[1.02] transition flex flex-col md:flex-row justify-between gap-6">
